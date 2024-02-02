@@ -1,5 +1,5 @@
-use lottery::fibonacci::fibonacci;
+use lottery::concurrency::concurrent_execution;
 
 fn main() {
-    fibonacci();
+    concurrent_execution();
 }
