@@ -19,7 +19,7 @@ pub fn concurrent_execution() {
             {
                 let mut fib = fib.lock().unwrap();
                 fib.push(i);
-                sender.send(i);
+                sender.send(i).unwrap();
             }
 
             println!("Hello from thread {}: {:?}", i, fib);
